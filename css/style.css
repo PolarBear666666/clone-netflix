@@ -1,0 +1,61 @@
+body {
+    background-color: #141414; /*배경 색깔*/
+    color: #F3F3F3; /*폰트 색상*/
+    font-size: 17px;
+    margin: 0; /*기본 마진값을 0으로 설젛애서 없애기*/
+}
+
+* {
+    box-sizing: border-box; /* 박스 사이즈를 테두리 기준으로 계산 */
+}
+
+a {
+    color: #fff; /*a태그안 폰트 색상*/
+    text-decoration: none; /*a태그 밑줄 없애기(텍스트 데코 없애는거)*/
+}
+
+nav {
+    /* border: 1px solid red;  */
+    width: 100%; /*nav바 사이즈*/
+    min-width: 1100px; /*nav바가 줄어들때 글자가 아래로 밀려서 최소값을 정해줌*/
+}
+
+nav > div {
+    /* border: 1px solid #000; */
+    height: 70px;
+    line-height: 60px; /*nav바 안에 div박스 글자 높이 조정*/
+}
+
+.logo {
+    float: left; /*로고를 띄워서 왼쪽에 정렬*/
+    width: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 75px;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.gnb {
+    width: calc(100% - 380px);
+    display: inline-block;
+    text-align: left;
+}
+
+.gnb a {
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.lnb {
+    float: right;
+    width: 200px;
+    text-align: left;
+}
+
+.lnb a {
+    margin: 10px;
+    margin-right: 5px;
+}
